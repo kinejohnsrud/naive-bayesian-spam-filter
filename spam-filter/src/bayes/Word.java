@@ -70,7 +70,4 @@ public class Word {
 	public void setProbOfSpam(float probOfSpam) {
 		this.probOfSpam = probOfSpam;
 	}
-	
-	
-
 }
