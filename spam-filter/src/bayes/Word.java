@@ -41,11 +41,6 @@ public class Word {
 			probOfSpam = 0.99f;
 		}
 	}
-	
-	//The interesting rate is how far the probability is from 0.5 i.e. 50/50 chance.
-	public float interestingRate(){
-		return Math.abs(0.5f - probOfSpam);
-	}
 
 	public String getWord() {
 		return word;
