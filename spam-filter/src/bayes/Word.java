@@ -42,15 +42,35 @@ public class Word {
 		}
 	}
 	
-	public float getProbability(){
-		return this.probOfSpam;
-	}
-	
-	
 	//The interesting rate is how far the probability is from 0.5 i.e. 50/50 chance.
 	public float interestingRate(){
 		return Math.abs(0.5f - probOfSpam);
 	}
+
+	public String getWord() {
+		return word;
+	}
+
+	public float getSpamRate() {
+		return spamRate;
+	}
+
+	public float getHamRate() {
+		return hamRate;
+	}
+
+	public void setHamRate(float hamRate) {
+		this.hamRate = hamRate;
+	}
+
+	public float getProbOfSpam() {
+		return probOfSpam;
+	}
+
+	public void setProbOfSpam(float probOfSpam) {
+		this.probOfSpam = probOfSpam;
+	}
+	
 	
 
 }
